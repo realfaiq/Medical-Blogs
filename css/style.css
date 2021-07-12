@@ -78,6 +78,73 @@
 }
 
 
+/* Icons */
+
+.icons ul{
+    display: flex;
+    padding: 10px;
+    margin-left: 25%;
+}
+
+.icons ul li{
+    list-style: none;
+    margin: 0 15px;
+}
+
+.icons ul li .fab{
+    font-size: 30px;
+    line-height: 60px;
+    color: #fff;
+    text-align: center;
+}
+
+.icons ul li a{
+    position: relative;
+    display: block;
+    background: lightslategrey;
+    border-radius: 50%;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0,0,0,.5);
+}
+
+.icons ul li a:hover{
+    transform: translate(0, -5px);
+}
+
+.icons ul li .fab:hover{
+    color: #fff;
+}
+
+.icons ul li:nth-child(1) a:hover{
+    background: #1877f2;
+}
+
+.icons ul li:nth-child(2) a:hover{
+    background: #c32aa3;
+}
+
+
+.icons ul li:nth-child(3) a:hover{
+    background: #1da1f2;
+}
+
+
+.icons ul li:nth-child(4) a:hover{
+    background: #0a66c2;
+}
+
+
+.icons ul li:nth-child(5) a:hover{
+    background: #bd081c;
+}
+
+
+
+
+
 /* main-Content */
 
 .Content{
@@ -149,8 +216,6 @@ input{
   
 }
 
-.abc{
-}
 
 /* input[type=text]{
     margin-left: 10px;
@@ -326,40 +391,195 @@ input{
     font-size: 3rem;
 }
 
-/* Contact Page */
+/* Contact */
 
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px; 
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
-    box-sizing: border-box; 
-    margin-top: 6px; 
-    margin-bottom: 16px;
-    resize: vertical;
-  }
-  
+.contact{
+    width: 500px;
+    background-color: #fff;
+    box-shadow: 0 0 5px 0 #999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    margin-top: 20px;
+}
 
-  input[type=submit] {
-    background-color: var(--secondary-color);
+.forms {
+    margin: 35px;
+}
+
+.input-field{
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    outline: none;
+    border: 1px solid #777;
+    border-radius: 14px;
+}
+
+.textarea-field{
+    height: 150px;
+    padding-top: 10px;
+    border-radius: 14px;
+    outline: none;
+}
+
+.main-1{
+    margin-top: 40%;
+    bottom: 0;
+}
+
+.main-1 .copy{
+    color: #fff;
+    background: #000;
+    padding: 0px;
+    position: absolute;
+}
+
+
+/* Login */
+
+.box{
+    margin-top: 10px;
+    width: 400px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #191919;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.box h1{
     color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
- 
-  input[type=submit]:hover {
-    background-color: #000;
-  }
-  
+    text-transform: uppercase;
+    font-weight: 500;
+}
 
-  .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
+.box input[type = "text"], .box input[type = "password"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.box input[type = "text"]:focus, .box input[type = "password"]:focus{
+    width: 280px;
+    border-color: #2ecc71;
+}
+
+.box input[type = "submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.box input[type = "submit"]:hover{
+    background: #2ecc71;
+    transition: all 0.5s ease-in;
+}
+
+/* Sign-up */
+
+.sign{
+    margin-top: 60px;
+    width: 400px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #191919;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.sign h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.sign input[type = "text"], .sign input[type = "password"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+
+.sign input[type = "text"]:focus, .sign input[type = "password"]:focus{
+    width: 280px;
+    border-color: #2ecc71;
+}
+
+
+.sign input[type = "submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.sign input[type = "submit"]:hover{
+    background: #2ecc71;
+    transition: all 0.5s ease-in;
+}
+
+.main-2{
+    margin-top: 45%;
+    bottom: 0;
+}
+
+.main-2 .copy{
+    color: #fff;
+    background: #000;
+    padding: 0px;
+    position: absolute;
+}
+
+/* End */
+
+
+
+
+
 
 
 
